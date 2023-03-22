@@ -1,4 +1,5 @@
 # Curiosity Sampling
+![image](https://user-images.githubusercontent.com/128594297/226975373-f2217810-9b06-457c-b91b-ad29d31f4cf3.png)
 
 Curiosity Sampling is an algorithm that enables efficient sampling of protein conformational landscapes using a Reinforcement Learning-based algorithm that specifically samples configurations that maximize the "novelty" or curiosity reward. This method can overcome the limitations of traditional molecular dynamics (MD) simulations and efficiently explore the high-dimensional configurational space of proteins.
 
