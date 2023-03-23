@@ -387,10 +387,10 @@ class CuriousSampling:
                 with self.tb_writer.as_default(c):
                     tf.summary.histogram(
                         "mdstats/Potential energy for the simulation {0}".format(w),
-                        tf.convert_to_tensor(obs["energy"][:, 0]),
+                        tf.convert_to_tensor(obs["energy"][:, 0].astype("float32")),
                     )
 
-                for j, e in enumerate(tf.convert_to_tensor(obs["energy"][:, 0])):
+                for j, e in enumerate(tf.convert_to_tensor(obs["energy"][:, 0].astype("float32"))):
                     with self.tb_writer.as_default(c * int(obs["energy"].shape[0]) + j):
                         tf.summary.scalar(
                             "mdstats/Potential energy over frames for the simulation {0}".format(
