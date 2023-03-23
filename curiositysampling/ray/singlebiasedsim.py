@@ -804,13 +804,13 @@ class SingleBiasedSim:
         if traj_org["xyz"].shape[1] > 1:
             traj.center_coordinates()
             traj.superpose(self.superpose_traj)
+            sub_traj_ref = self.superpose_traj.atom_slice(sel)
         # would need very small timestep between frames
         # traj.smooth(3, inplace=True)
 
         # All indices from sub_traj correspond to the sub_traj!
         # Not to the full topology!
         sub_traj = traj.atom_slice(sel)
-        sub_traj_ref = self.superpose_traj.atom_slice(sel)
         feat_array = []
 
         if use_distances:
