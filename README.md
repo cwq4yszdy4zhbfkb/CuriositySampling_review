@@ -5,6 +5,7 @@
 Curiosity Sampling is an algorithm that enables efficient sampling of protein conformational landscapes using a Reinforcement Learning-based algorithm that specifically samples configurations that maximize the "novelty" or curiosity reward. This method can overcome the limitations of traditional molecular dynamics (MD) simulations and efficiently explore the high-dimensional configurational space of proteins.
 
 # Installation
+Expected time of tinstallation is about 30 minutes, so prepare your something tasty to drink. 
 
 ## Required libraries
 
@@ -86,7 +87,10 @@ pip install .
 
 # Usage
 
-To start using Curiosity Sampling, you first need to prepare an [OpenMM system](http://docs.openmm.org/latest/userguide/application/02_running_sims.html). Here is an example:
+To start using Curiosity Sampling, you first need to prepare an [OpenMM system](http://docs.openmm.org/latest/userguide/application/02_running_sims.html).
+The running time for the example is 2h for CPU only platform, though preparing the input should not exceed 10 minutes.
+
+Here is an example:
 
 ```python
 from openmm.app import *
@@ -131,7 +135,7 @@ Then we need to initialize two modules of Curiosity Sampling:
 * OpenMMManager - class which manages MD simulations inside Curiosity Sampling
 * CuriousSampling - class that manages Curiosity Sampling simulation in general
 
-The easiest way is to start from the default parameters and modify them (see Jupyter Notebook in the examples). Here we show without modification (go to the examples for more).
+The easiest way is to start from the default parameters and modify them (see Jupyter Notebook in the examples). Here we show without modification (go to the examples directory for **Alanine Dipeptide Jupyter Notebook example, this one should take about 20 minutes to run and provides excepted output in the bottom of the notebook**).
 
 ```python
 from curiositysampling.utils import DEFAULT_OMM_SETTINGS
