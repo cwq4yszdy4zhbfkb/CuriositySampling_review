@@ -86,7 +86,10 @@ pip install .
 ```
 
 # Usage
+## Jupyter Notebook
+In the doc/examples there is a Jupyter Notebook with Alanine Dipeptide, in detail explanations and excepted outputs. 
 
+## General version
 To start using Curiosity Sampling, you first need to prepare an [OpenMM system](http://docs.openmm.org/latest/userguide/application/02_running_sims.html).
 The running time for the example is 2h for CPU only platform, though preparing the input should not exceed 10 minutes.
 
