@@ -76,7 +76,7 @@ yes | pip install tensorflow-rocm tensorflow_probability tensorflow_addons tenso
 After setting up the Conda environment, clone the Curiosity Sampling repository:
 
 ```bash
-git clone https://github.com/CuriositySampling/CuriositySampling.git
+git clone https://github.com/cwq4yszdy4zhbfkb/CuriositySampling_review.git
 cd CuriositySampling
 ```
 Then, install Curiosity Sampling by running:
