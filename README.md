@@ -71,6 +71,12 @@ conda activate env_curiosity_hip
 yes | pip install tensorflow-rocm tensorflow_probability tensorflow_addons tensorboard
 ```
 
+⚠️WARNING⚠️
+Tensorflow Probability and Tensorflow Addons must be installed to a version of Tensorflow that is compatible with them!
+If you install Tensorflow separately using Conda, and then install the other two using pip, the versions may be different!
+We advise creating a completely new environment in Conda to work with Curiosity Sampling!
+⚠️WARNING⚠️
+
 ## Curiosity Sampling installation when all libraries are installed
 
 After setting up the Conda environment, clone the Curiosity Sampling repository:
