@@ -95,6 +95,16 @@ pip install .
 ## Jupyter Notebook
 In the doc/examples there is a Jupyter Notebook with Alanine Dipeptide, in detail explanations and excepted outputs. 
 
+## Remove files from previous Curiosity Sampling simulation
+⚠️WARNING⚠️
+
+If you used Curiosity Sampling simulation before in the same directory. Remove the tmp_data and trajectory files (names as a hashcode such as 05869f8a-1e6f-4e15-92fb-e3b0aba53168). You can perform:
+```bash
+rm -r tmp_data ????????-????-????-????-????????????
+```
+
+⚠️WARNING⚠️
+
 ## General version
 To start using Curiosity Sampling, you first need to prepare an [OpenMM system](http://docs.openmm.org/latest/userguide/application/02_running_sims.html).
 The running time for the example is 2h for CPU only platform, though preparing the input should not exceed 10 minutes.
